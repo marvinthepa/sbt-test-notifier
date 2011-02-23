@@ -1,9 +1,10 @@
-import de.aaschmid.sbtplugin.testnotifier.TestNotify
+//import de.aaschmid.sbtplugin.testnotifier.TestNotify
 
 import de.element34.sbteclipsify._
 import sbt.{Artifact, PluginProject, ProjectInfo, Resolver}
 
-class Project(info: ProjectInfo) extends PluginProject(info) with Eclipsify with IdeaProject with TestNotify {
+class Project(info: ProjectInfo) extends PluginProject(info) with Eclipsify with IdeaProject // with TestNotify
+ {
 
   private def withScalaVersion(libName: String) = libName + "_" + buildScalaVersion
 
