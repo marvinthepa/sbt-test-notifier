@@ -36,6 +36,8 @@ Afterwards you have to `import de.aaschmid.sbtplugin.testnotifier.TestNotify` an
 to the project class in `<your project directory>/project/Project.scala`, e.g.:
 
     import sbt._
+    import de.aaschmid.sbtplugin.testnotifier.TestNotify
+
     class Project(info: ProjectInfo) extends DefaultProject(info) with TestNotify {
       // ...
     }
